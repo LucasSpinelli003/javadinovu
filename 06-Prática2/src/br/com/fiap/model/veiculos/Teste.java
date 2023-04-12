@@ -1,3 +1,4 @@
+
 package br.com.fiap.model.veiculos;
 
 import java.util.Scanner;
