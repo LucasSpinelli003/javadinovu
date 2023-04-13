@@ -7,13 +7,13 @@ public class Bicicleta {
 	private float peso;
 	private Fabricante fabricante;
 	
-	Bicicleta(String modeloBicicleta){
-		modelo = modeloBicicleta;
+	public Bicicleta(String modelo, int aro){
+		this.modelo = modelo;
+		this.aro = aro;
 	}
 	
-	Bicicleta(String modeloBicicleta, int aro, String modelo, float peso,Fabricante fabricante){
-		this(modeloBicicleta);
-		this.aro = aro;
+	public Bicicleta(String modelo, int aro, float peso,Fabricante fabricante){
+		this(modelo, aro);
 		this.peso = peso;
 		this.fabricante = fabricante;
 	}

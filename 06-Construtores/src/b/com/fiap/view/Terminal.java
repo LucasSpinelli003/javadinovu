@@ -12,8 +12,8 @@ public class Terminal {
 
 		Scanner s = new Scanner(System.in);
 
-		Bicicleta bike = new Bicicleta();
-		Fabricante quico = new Fabricante();
+		Fabricante quico = new Fabricante("mababay", "444-424-2323.0001-00");
+		Bicicleta bike = new Bicicleta("Caloi", 20, 20, quico);
 		
 		quico.setCnpj("444-424-2323.0001-00");
 		quico.setNome("mababay");
@@ -22,7 +22,9 @@ public class Terminal {
 		bike.setFabricante(quico);
 		bike.setModelo("Caloi");
 		bike.setPeso(20);
-		System.out.println(bike.retornarDetalhes() + quico.getCnpj() +"|" + quico.getNome());
+		System.out.println(bike.retornarDetalhes() );
+		
+		System.out.println("Nome do Fabricante: " + " " + bike.getFabricante().getNome() + " " + "||" + " Cnpj do Fabricante: "+ " " + bike.getFabricante().getCnpj());
 
 	}
 }
