@@ -51,6 +51,6 @@ public class Bicicleta {
 	}
 
 	public String retornarDetalhes() {
-		return aro + "|" + "|" + modelo + "|" + peso ;
+		return "Tamanho do aro: " + aro + "|" + "Modelo: " + modelo + "|" + "Peso: " + peso ;
 	}
 }
